@@ -1,0 +1,20 @@
+path-config:
+  # sourcePath:   'E:/datasets/test/facade'
+  # sourcePath:   ROOT / data/facade/8251051
+  weightsPath:  ROOT / win_det.pt
+  targetPath:   ROOT / DetectionResults / Window
+  subTarget:    USE_TIME
+
+parameters:
+  # conf_thres  : 0.25  # confidence threshold
+  # iou_thres   : 0.45  # NMS IOU threshold
+  # classes     : None  # filter by class: --class 0, or --class 0 2 3
+  # agnostic_nms: False 
+  # max_det     : 1000  # max object
+  # save_crop   : False
+  # save_conf   : True
+  # hide_labels : False
+  # hide_conf   : False
+  # imgsz       : [640, 640]
+  # line_width  : 3
+  device      : ''
