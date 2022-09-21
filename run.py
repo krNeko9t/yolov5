@@ -50,7 +50,8 @@ class Detect:
     # RELATE/ABSOLUTE
     # sourcePath = Path('E:/datasets/test/google/1') # Pic to detect
     # sourcePath = ROOT / 'data' / 'facade' / '8301703' # Pic to detect
-    sourcePath = 'E:/yolov5/data/facade/mesh_soup' # Pic to detect
+    # sourcePath = 'E:/yolov5/data/facade/mesh_soup' # Pic to detect
+    sourcePath = 'F:/datasets/HD' # Pic to detect
     # sourcePath = 'E:/datasets/test/facade' # Pic to detect
     # source = 'e:/datasets/test/ppt-1'
 
@@ -182,7 +183,7 @@ class Detect:
                             save_one_box(xyxy, imc, file=save_dir / 'crops' / names[c] / f'{p.stem}.jpg', BGR=True)
 
                         # mask image
-                        cv2.rectangle(imMaskImgs[names[c]],(int(xyxy[0]),int(xyxy[1])),(int(xyxy[2]),int(xyxy[3])),getColor(t0),-1)
+                        cv2.rectangle(imMaskImgs[c],(int(xyxy[0]),int(xyxy[1])),(int(xyxy[2]),int(xyxy[3])),getColor(t0),-1)
                         cv2.rectangle(imAllMask,(int(xyxy[0]),int(xyxy[1])),(int(xyxy[2]),int(xyxy[3])),getColor(t0),-1)
 
                 # save result
